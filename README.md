@@ -11,7 +11,7 @@ The API serves two main purposes:
 
 The project demonstrates scalable architecture, TypeScript usage, unit testing, linting, formatting, and caching.
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Node.js
 - Express
