@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = __importDefault(require("fs"));
 const imageProcessor_1 = __importDefault(require("../utilities/imageProcessor"));
 describe('Image Processing', () => {
-    it('Resizing an image that doesn\'t exist', () => __awaiter(void 0, void 0, void 0, function* () {
+    it("Resizing an image that doesn't exist", () => __awaiter(void 0, void 0, void 0, function* () {
         try {
             yield (0, imageProcessor_1.default)('assets/full/nonexistent.jpg', 'assets/thumb/test_nonexistent.jpg', 200, 200);
             expect(true).toBe(false); // Should not reach here

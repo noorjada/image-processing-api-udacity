@@ -29,23 +29,23 @@ export const resizeImage = async (
     return
   }
 
-  // Validate width is a valid number
-  const width = parseInt(widthStr, 10)
-  if (isNaN(width)) {
+  // Validate width is a valid number (no letters allowed)
+  if (!/^\d+$/.test(widthStr)) {
     res
       .status(400)
       .json({ error: 'Invalid width value. Width must be a number' })
     return
   }
+  const width = parseInt(widthStr, 10)
 
-  // Validate height is a valid number
-  const height = parseInt(heightStr, 10)
-  if (isNaN(height)) {
+  // Validate height is a valid number (no letters allowed)
+  if (!/^\d+$/.test(heightStr)) {
     res
       .status(400)
       .json({ error: 'Invalid height value. Height must be a number' })
     return
   }
+  const height = parseInt(heightStr, 10)
 
   // Validate width is a positive number
   if (width <= 0) {
@@ -65,12 +65,10 @@ export const resizeImage = async (
 
   // Validate filename format (alphanumeric and underscores only)
   if (!/^[a-zA-Z0-9_-]+$/.test(filename)) {
-    res
-      .status(400)
-      .json({
-        error:
-          'Invalid filename. Filename must contain only alphanumeric characters, underscores, and hyphens',
-      })
+    res.status(400).json({
+      error:
+        'Invalid filename. Filename must contain only alphanumeric characters, underscores, and hyphens',
+    })
     return
   }
 
