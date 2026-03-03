@@ -1,5 +1,6 @@
 # Image Processing API
 
+<<<<<<< HEAD
 A Node.js/Express API for resizing images on-the-fly with automatic caching support.
 
 ## Features
@@ -63,3 +64,29 @@ curl "http://localhost:3000/api/images?filename=noor&width=400&height=600"
 - **Testing**: Jasmine tests in `src/tests/` cover endpoints and image processing
 - **Code Quality**: Includes ESLint and Prettier configuration
 - **Development**: Hot-reload with `npm run dev` using Nodemon
+=======
+##  Project Description
+
+This project is a Node.js + Express API built with TypeScript that dynamically resizes images using the Sharp library.
+
+The API serves two main purposes:
+
+1. Acts as a simple placeholder image service for frontend prototyping.
+2. Dynamically resizes existing images and caches them to improve performance and reduce processing time.
+
+The project demonstrates scalable architecture, TypeScript usage, unit testing, linting, formatting, and caching.
+
+
+
+##  Technologies Used
+
+- Node.js
+- Express
+- TypeScript
+- Sharp
+- Jasmine (Unit Testing)
+- Supertest (Endpoint Testing)
+- ESLint
+- Prettier
+
+>>>>>>> 9c24625cfbdebe105a5428e705d05cd098363761
