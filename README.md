@@ -1,6 +1,6 @@
 # Image Processing API
 
-<<<<<<< HEAD
+
 A Node.js/Express API for resizing images on-the-fly with automatic caching support.
 
 ## Features
@@ -79,4 +79,4 @@ curl "http://localhost:3000/api/images?filename=noor&width=400&height=600"
 - ESLint
 - Prettier
 
->>>>>>> 9c24625cfbdebe105a5428e705d05cd098363761
+
