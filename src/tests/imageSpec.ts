@@ -1,15 +1,14 @@
-
 import fs from 'fs'
 import processImage from '../utilities/imageProcessor'
 
 describe('Image Processing', () => {
-  it('Resizing an image that doesn\'t exist', async () => {
+  it("Resizing an image that doesn't exist", async () => {
     try {
       await processImage(
         'assets/full/nonexistent.jpg',
         'assets/thumb/test_nonexistent.jpg',
         200,
-        200
+        200,
       )
       expect(true).toBe(false) // Should not reach here
     } catch {
@@ -24,7 +23,7 @@ describe('Image Processing', () => {
         'assets/full/fjord.jpg',
         'assets/thumb/fjord_thumbnail.jpg',
         200,
-        200
+        200,
       )
 
       expect(fs.existsSync('assets/thumb/fjord_thumbnail.jpg')).toBeTrue()

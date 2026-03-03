@@ -15,7 +15,7 @@ class CustomReporter {
     if (!this.suiteMap[result.description]) {
       this.suiteMap[result.description] = {
         name: result.description,
-        specs: []
+        specs: [],
       }
     }
   }
@@ -30,14 +30,14 @@ class CustomReporter {
     if (!this.suiteMap[suiteName]) {
       this.suiteMap[suiteName] = {
         name: suiteName,
-        specs: []
+        specs: [],
       }
     }
 
     this.suiteMap[suiteName].specs.push({
       name: result.description,
       status: result.status,
-      messages: result.failureMessages
+      messages: result.failureMessages,
     })
   }
 

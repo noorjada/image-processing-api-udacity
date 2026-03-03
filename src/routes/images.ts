@@ -1,4 +1,3 @@
-
 import express from 'express'
 import { resizeImage } from '../controllers/imagesController'
 

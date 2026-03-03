@@ -1,4 +1,3 @@
-
 import express from 'express'
 import imagesRoute from './routes/images'
 
